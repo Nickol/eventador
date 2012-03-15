@@ -64,10 +64,38 @@ class Admin extends CI_Controller {
 		
 	}
 	}
+	
+		public function add_subject() {
+		
+		$tablename = 'subjects';	
+			
+		$this -> load -> library('form_validation');
+			
+		$this -> form_validation -> set_rules('subject', 'subject', 'required');
+				
+		if ($this -> form_validation -> run() == FALSE) {
+			$this -> load -> view('admin/add_subject');
+		} else {
+			$data['subject'] = $this -> input -> post('name');
+			
+			$this -> admin_model -> put($tablename, $data);
+			$this -> load -> view('admin/add_subject');
+		
+	}
+	}
+	
+	
+	
+	
+	
 		
 	public function edit() {
 
 	}
+
+
+
+
 
 }
 ?>	
