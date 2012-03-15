@@ -2,8 +2,11 @@
 require_once ('header.php');
 ?>
 
-<div>
-	<?php echo form_open('admin/add');?>
+<div  class="hero-unit">
+	<h3>Добавить предмет</h3>
+	<div>
+	<?php echo form_open('admin/add_subject');?>
+	
 	<table>
 		<tr>
 			<td> Название предмета: </td>
@@ -12,12 +15,12 @@ require_once ('header.php');
 			</td>
 		</tr>
 	</table>
-</div>
 <p>
 	<input class="btn" type="submit" value = "Добавить" name="submit">
 </p>
 </form>
 </div> 
+</div>
 
 <?php
 	require_once ('footer.php');

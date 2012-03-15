@@ -1,6 +1,7 @@
 </div> <!-- /container -->
  <footer>
-        <p>Коля и Максим production</p>
+ 	<hr>
+       <center> <p>Коля и Максим production</p><center>
       </footer>
     <!-- Le javascript
     ================================================== -->

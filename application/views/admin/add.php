@@ -26,6 +26,6 @@
 		</form>
       </div>
 
-            <hr>
+            
 
 <?php require_once ('footer.php');?>
